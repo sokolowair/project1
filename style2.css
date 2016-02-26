@@ -1,0 +1,32 @@
+img.peace {
+    float: left;
+    margin: 20px;
+    margin-left:20px;
+
+
+}
+img.green {
+   float:left;
+   margin-left: 100px;
+   width:500px;
+   height: 300px;
+   border-radius:20px;
+
+}
+ div.wrapper {
+   background-color: rgba(255,255,255,0.5);
+  margin: auto;
+  height: auto;
+  width: 85%;
+  text-align: left;
+}
+
+
+ @media screen and (max-width: 750px) { 
+   body { 
+  background-color:#ffff4d;
+  font-size: 15px;
+ font-family: arial;
+}
+ 
+ 
