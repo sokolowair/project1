@@ -11,14 +11,31 @@
 
 
  }
+   img.wind {
+   
+   width:580px;
+   height:250px;
+   float:left;
+   margin: 5px;
 
+
+}
 
 </style>
+<link href="style.css" rel="stylesheet" >
+<link href="style2.css" rel="stylesheet" >
 </head>
 <body>
 
-<?php require 'hello.php';?>
+<?php 
 
+ $tmp=file_get_contents("menu.html");
+ echo $tmp;
+   
+
+?>
+<?php require 'hello.php';?>
+<img class="wind" src="http://www.swycs.com/wp-content/uploads/2015/07/windpower6.jpg">
 <h1>Wind Energy</h1><br>
 <p><h3>Societies have taken advantage of wind power for thousands of years. The first known use was in 5000 BC when people used sails to navigate the Nile River . <br> Persians had already been using windmills for 400 years by 900 AD in order to pump water and grind grain. Windmills may have even been developed in China before 1 AD, but the earliest written documentation comes from 1219. <br>Cretans were using "literally hundreds of sail-rotor windmills [to] pump water for crops and livestock."</h3><br>
 <h1>The Windmill</h1><br>
@@ -46,6 +63,10 @@
 
 
 
+<?php
+$tmp=file_get_contents("footer.html");
+echo $tmp;
 
+?>
 </body>
 </html>
