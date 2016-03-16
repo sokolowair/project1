@@ -1,5 +1,6 @@
 <html>
 <head>
+
 <title>Alternative Energy Sources</title>
 <style>
  body {
@@ -16,21 +17,29 @@ h3 {
      text-align: left;
 
 }
- img.solar {
-   widht : 350px;
-   height: 250px;
-   margin : 3px;
-   float: left;
 
+ img.solar {
+   width : 590px;
+   height: 280px;
+   margin : 5px;
+   float: left;
 
 }
 </style>
+<link href="style.css" rel="stylesheet" >
+<link href="style2.css" rel="stylesheet" >
+
 </head>
 <body>
+<?php 
 
+ $tmp=file_get_contents("menu.html");
+ echo $tmp;
+   
+
+?>
 <?php require 'hello.php';?>
-
-
+<img class="solar" src="http://www.tropicalsolarenergy.com/solar-energy.png">
 
   <h1>Solar Energy</h1>
 <h3><p>The Earth receives an incredible supply of solar energy.<br> The sun, an average star, is a fusion reactor that has been burning over 4 billion years. It provides enough energy in one minute to supply the world's energy needs for one year. In one day, it provides more energy than our current population would consume in 27 years. In fact, "The amount of solar radiation striking the earth over a three-day period is equivalent to the energy stored in all fossil energy sources."<br> 
@@ -56,6 +65,10 @@ But a person living in Siberia would not benefit much from this renewable resour
 The best way of lowering the cost of solar energy is to improve the cell's efficiency, according to Larry Kazmerski, Director of the DOE's National Center for Photovoltaics. "As the scientists and researchers at the NCPV push the envelope of solar-cell efficiency, we can begin to visualize the day when energy from the sun will be generating a significant portion of the country's electric power demand." Any improvements and subsequent cost cuts will also be vital to space applications.Also try finding the right Electric company in order to save money. Power companies can help you benefit with decisions such as this.
 As the price of solar power lowers and that of conventional fuels rises, photovoltaics "is entering a new era of international growth.<br>" So much so, that solar power "will remain an excellent energy option, long after the momentary fossil fuel model fades into smoke."</h3>
 
+<?php
+$tmp=file_get_contents("footer.html");
+echo $tmp;
 
+?>
 </body>
 </html>
