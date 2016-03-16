@@ -1,10 +1,11 @@
 <html>
 <head>
+
 <title>Renewable Energy</title>
 <style>
    body {
     background-color: light-grey ;
-   text-align: left;
+   text-align: center;
    margin-right: 35%;
 
 }
@@ -23,17 +24,26 @@
 img.rene {
 margin-left: 100px;
   float:left;
-   width:400px;
-   height: 400px;
+   width:320px;
+   height: 320px;
    border-radius:20px;
 
 
 }
 
 </style>
+<link href="style.css" rel="stylesheet" >
+<link href="style2.css" rel="stylesheet" >
 </head>
 <body>
 
+<?php 
+
+ $tmp=file_get_contents("menu.html");
+ echo $tmp;
+   
+
+?>
 <img class=rene src="http://arabiangazette.com/wp-content/uploads/2012/07/green-energy-modes.jpg">
 <?php require 'hello.php';?>
 
@@ -55,6 +65,10 @@ What are renewable energy sources? Solar power can be used directly for heating 
 
 
 
+<?php
+$tmp=file_get_contents("footer.html");
+echo $tmp;
 
+?>
 </body>
 </html>
